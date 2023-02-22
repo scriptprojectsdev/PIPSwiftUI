@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
+    @State var isVideoPresented = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Button {
+            isVideoPresented.toggle()
+        } label: {
+            Text("Play test video")
+        }.fullScreenCover(isPresented: $isVideoPresented) {
+            CustomPlayer(player: AVPlayer(url: URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4")!), isVideoPresented: $isVideoPresented).ignoresSafeArea()
         }
-        .padding()
+
     }
 }
 

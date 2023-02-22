@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 @main
 struct PIPSwiftUIApp: App {
@@ -13,5 +14,10 @@ struct PIPSwiftUIApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    init() {
+        try? AVAudioSession.sharedInstance().setCategory(.playback)
+        try? AVAudioSession.sharedInstance().setActive(true)
     }
 }

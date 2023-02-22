@@ -11,6 +11,7 @@
 		D28243C329A5A81D00914FD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28243C229A5A81D00914FD3 /* ContentView.swift */; };
 		D28243C529A5A81E00914FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28243C429A5A81E00914FD3 /* Assets.xcassets */; };
 		D28243C829A5A81E00914FD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28243C729A5A81E00914FD3 /* Preview Assets.xcassets */; };
+		D28243CF29A5A9CC00914FD3 /* CustomPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28243CE29A5A9CC00914FD3 /* CustomPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		D28243C229A5A81D00914FD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D28243C429A5A81E00914FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28243C729A5A81E00914FD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D28243CE29A5A9CC00914FD3 /* CustomPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayer.swift; sourceTree = "<group>"; };
+		D28243D029A5AA8300914FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,12 @@
 		D28243BF29A5A81D00914FD3 /* PIPSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D28243D029A5AA8300914FD3 /* Info.plist */,
 				D28243C029A5A81D00914FD3 /* PIPSwiftUIApp.swift */,
 				D28243C229A5A81D00914FD3 /* ContentView.swift */,
 				D28243C429A5A81E00914FD3 /* Assets.xcassets */,
 				D28243C629A5A81E00914FD3 /* Preview Content */,
+				D28243CE29A5A9CC00914FD3 /* CustomPlayer.swift */,
 			);
 			path = PIPSwiftUI;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				D28243C329A5A81D00914FD3 /* ContentView.swift in Sources */,
 				D28243C129A5A81D00914FD3 /* PIPSwiftUIApp.swift in Sources */,
+				D28243CF29A5A9CC00914FD3 /* CustomPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +276,7 @@
 				DEVELOPMENT_TEAM = GM9AKVU228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PIPSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +306,7 @@
 				DEVELOPMENT_TEAM = GM9AKVU228;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PIPSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
